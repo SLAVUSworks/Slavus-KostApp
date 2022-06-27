@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --varyDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --weight1: 200;
+    --weight2: 400;
+    --weight3: 600;
+}
+
+body {
+    background-color: #2178a0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1376px 800px;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.merk>h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+#xl {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 70px;
+}
+
+#l {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 5px;
+    font-size: 44px;
+}
+
+#m {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    #xl {
+        font-size: 48px;
+    }
+
+    #l {
+        font-size: 30px;
+    }
+
+    #m {
+        font-size: 15px;
+    }
+}
+
+.merk>div {
+    text-align: center;
+}
+
+.merk>div>a:link,
+.merk>div>a:visited {
+    background-color: #236aec;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.merk>div>a:hover,
+.merk>div>a:active {
+    background-color: rgb(255, 255, 255);
+    color: #236aec;
+}
+
+.box p {
+    color: var(--grayishBlue);
+}
+
+.box {
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    padding: 30px;
+    margin: 20px;
+}
+
+img {
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .box>img {
+        height: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+    .box {
+        text-align: center;
+        height: 180px;
+    }
+}
+
+.cyan {
+    border-top: 3px solid var(--cyan);
+}
+
+.red {
+    border-top: 3px solid var(--red);
+}
+
+.blue {
+    border-top: 3px solid var(--blue);
+}
+
+.orange {
+    border-top: 3px solid var(--orange);
+}
+
+h2 {
+    color: var(--varyDarkBlue);
+    font-weight: var(--weight3);
+}
+
+
+@media (min-width: 950px) {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-down {
+        position: relative;
+        top: 150px;
+    }
+
+    .box {
+        width: 20%;
+
+    }
+
+    .header p {
+        width: 30%;
+    }
+
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px
+}
+
+.footer-col h4 {
+    color: #b84a4a;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.logo>b {
+    font-size: 20px;
+}
+
+.footer-col h4 img {
+    height: 30px;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
